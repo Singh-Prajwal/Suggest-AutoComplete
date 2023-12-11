@@ -1,0 +1,4 @@
+auto-venv/
+__pycache__/
+elastic-api.py
+home.html
