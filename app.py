@@ -4,10 +4,9 @@ from flask import Flask
 from elasticsearch import Elasticsearch
 app = Flask(__name__)
 
-# es = Elasticsearch(hosts=["https://127.0.0.1:9200"],
-#                    basic_auth=("elastic", "eXun5Zuz5ctLbko-ktQ+"), verify_certs=False)
-es = Elasticsearch(
-    cloud_id="prajwal_ES:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGU5ODkzMzM3MDRiMDQxZTY4MGZiZjJmM2I0NjhjZWIxJGQ2OTAxMjY1MmNlZjQ0OTk4Mzk0MWY3YTBlYjI3NTFk", basic_auth=('elastic', 'q1IeaiPZ3IgaTwcZgXjeiFjx'))
+es = Elasticsearch(hosts=["https://127.0.0.1:9200"],
+                   basic_auth=("elastic", "eXun5Zuz5ctLbko-ktQ+"), verify_certs=False)
+
 print("Connected to Elasticsearch cluster")
 # print({es.info().body["cluster_name"]})
 
